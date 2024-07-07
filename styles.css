@@ -3,8 +3,10 @@
 *{
     margin: 0;
     padding: 0;
+    
     /* box-sizing: border-box; */
     overflow-y: auto;
+    
 }
 body::-webkit-scrollbar{
     display: none;
@@ -12,13 +14,27 @@ body::-webkit-scrollbar{
 
 body{
     background-color: rgba(214, 214, 209, 0.951);
+    overflow-x: hidden;
     /* background-color: rgb(207, 204, 197); */
 }
-.navbar{
+.sec_one{
     background-color: black;
+   
+}
+.beigebox2{
+    background-color:rgba(135, 104, 104) ;
+    height:35rem;
+    width:260rem;
+    position: absolute;
+    bottom:40.7rem;
+    right:0;
+    transform: rotate(14deg);
+}
+.navbar{
+    /* background-color: black; */
     position: relative;
     padding:2%;
-    
+    /* z-index: 1; */
 }
 .name_in_navbar{
     color: white;
@@ -35,14 +51,11 @@ body{
     right:2rem;
     bottom:1rem;
     display:flex;
-    
 }
 .nav_element{
     margin: 0 2rem;
 }
-.nav_element:hover{
-    color: rgba(135, 104, 104, 0.959);
-}
+
 .navbar a{
     text-decoration: none;
     color:white;
@@ -51,21 +64,49 @@ body{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    display:block;
+    position: relative;
+    padding: 0.2em 0;
+}
+/* .navbar a::after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:0.1em;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
     
 }
-
+/* .navbar a::after,
+.navbar a:focus::after{
+    opacity:0;
+    transform:translate3d(0,0.2em,0);
+} */
+/* .navbar a::after{
+    opacity:1;
+    transform: scale(0);
+    transform-origin: center;
+}
+.navbar a::after,
+.navbar a:focus::after{
+    transform: scale(1);
+} */ 
 .wrapper{
     height: 91vh;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 .imageWrapper{
     height:25rem;
     width:20rem;
     overflow: hidden;
     border-radius: 8px;
+    z-index: 1;
     
 }
 .imageWrapper img{
@@ -81,6 +122,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    z-index: 1;
 }
 .sec_two{
     background-color:  rgb(207, 204, 197);
@@ -242,15 +284,23 @@ body{
 }
 .projectBox{
     color: black;
-    height:20rem;
-    width:20rem;
+    height:20.5rem;
+    width:20.5rem;
     border-radius: 12px;
     background-color:rgb(207, 204, 197);
     z-index: 1;
     margin:4rem 0;
 }
+
 .projectBox h2,p{
-    margin-left: 2rem;
+    margin:1rem;
+}
+.projectBox a{
+    text-decoration: none;
+    color:black;
+}
+.projectBox a:hover{
+    color:rgba(135, 104, 104);
 }
 
 .sec_five{
@@ -296,6 +346,10 @@ body{
     width: 16rem;
     margin:2rem 6rem;
 }
+.Education .schools:hover{
+    scale:1.1;
+    transition: all 1s ease;
+}
 footer{
     background-color: black;
     color:white;
@@ -321,4 +375,8 @@ footer h2{
     margin-bottom: 5rem;
     font-size: 1.8rem;
     overflow: hidden;
+}
+.icon:hover{
+    scale:1.1;
+    transition: all ease;
 }
