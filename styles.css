@@ -6,24 +6,25 @@
     
     /* box-sizing: border-box; */
     overflow-y: auto;
-    
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar{
     display: none;
 }
 
 body{
-    background-color: rgba(214, 214, 209, 0.951);
-    overflow-x: hidden;
+    
+    /* background-color: rgba(214, 214, 209, 0.951); */
+    background-color: black;
     /* background-color: rgb(207, 204, 197); */
 }
 .sec_one{
     background-color: black;
-   
+    overflow-x: hidden;
 }
 .beigebox2{
     background-color:rgba(135, 104, 104) ;
-    height:35rem;
+    height:38rem;
     width:260rem;
     position: absolute;
     bottom:40.7rem;
@@ -64,9 +65,9 @@ body{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    display:block;
+    /* display:block;
     position: relative;
-    padding: 0.2em 0;
+    padding: 0.2em 0; */
 }
 /* .navbar a::after{
     content:'';
@@ -99,6 +100,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     
 }
 .imageWrapper{
@@ -125,19 +127,23 @@ body{
     z-index: 1;
 }
 .sec_two{
-    background-color:  rgb(207, 204, 197);
+    /* background-color:  rgb(207, 204, 197); */
+    background-color: black;
     position: relative;
     height:75vh;
+    overflow-x: hidden;
 }
 
 .color_box{
     height:20rem;
     width:20rem;
-    background-color:rgba(135, 104, 104, 0.959)
+    background-color:rgba(135, 104, 104, 0.959);
      
 }
 .aboutWrapper{
+    color:white;
     display:flex;
+    flex-wrap: wrap;
     position: absolute;
     top:5rem;
     left:5rem;
@@ -174,19 +180,22 @@ body{
     font-style: normal;
     font-size:4rem;
     margin-bottom: 2rem;
+    color:rgba(135, 104, 104, 0.959);
 }
 .sec_three{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    
+    overflow-x: hidden;
+    color:white;
 }
 .sec_three h1{
     text-align:center;
     margin-top:5rem;
     font-size:4rem;
     font-weight:400;
+    color:rgba(135, 104, 104, 0.959);
 
 }
 .sec_three p{
@@ -198,6 +207,7 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 4rem;
+    
     
 }
 .skillWrapper h2{
@@ -250,7 +260,7 @@ body{
     margin-top:2rem;
     font-size:4rem;
     font-weight:400;
-
+    color:rgba(135, 104, 104, 0.959);
 }
 .proj_p{
     text-align:center;
@@ -275,6 +285,7 @@ body{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 .projects h2{
@@ -283,11 +294,12 @@ body{
     font-weight: 400;
 }
 .projectBox{
-    color: black;
+    color: white;
     height:20.5rem;
     width:20.5rem;
     border-radius: 12px;
-    background-color:rgb(207, 204, 197);
+    /* background-color:rgb(207, 204, 197); */
+    background-color:rgba(188, 160, 160, 0.5);
     z-index: 1;
     margin:4rem 0;
 }
@@ -297,10 +309,10 @@ body{
 }
 .projectBox a{
     text-decoration: none;
-    color:black;
+    color:white;
 }
 .projectBox a:hover{
-    color:rgba(135, 104, 104);
+    color:rgb(201, 201, 201);
 }
 
 .sec_five{
@@ -309,7 +321,8 @@ body{
     font-weight: 400;
     font-style: normal;
     margin-bottom: 4rem;
-   
+    overflow-x: hidden;
+    color: white;
   
     
 }
@@ -318,7 +331,7 @@ body{
     margin-top:5rem;
     font-size:4rem;
     font-weight:400;
-
+    color:rgba(135, 104, 104, 0.959);
 }
 .sec_five p{
     text-align:center;
@@ -327,6 +340,7 @@ body{
 }
 .schools h1{
     font-size:1.2rem;
+    color: white;
 }
 .schools h3{
     font-size:1rem;
@@ -337,6 +351,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 4rem;
 }
 .schools{
     text-align: center;
@@ -379,4 +394,216 @@ footer h2{
 .icon:hover{
     scale:1.1;
     transition: all ease;
+}
+@media  only screen and (width<=1515px){
+    .beigebox2{
+        height:35rem;
+        width:240rem;
+    }
+    .greetText{
+        font-size: 7rem;
+    }
+    .sec_two{
+        height:66vh;
+    }
+    .about {
+        font-size: 1rem;
+    }
+    .about h1{
+        font-size: 3.5rem;
+    }
+    .sec_three p{
+        font-size:1.3rem;
+    }
+    .sec_three h1{
+        font-size: 3.5rem;
+    }
+
+    .skillWrapper h2{
+        font-size: 1.6rem;
+        margin:0.6rem;
+    }
+    .skillWrapper h3{
+        font-size: 1.3rem;
+        
+    }
+    .skillWrapper li{
+        font-size:1rem;
+    }
+    .sec_four h1{
+        font-size: 3.5rem;
+    }
+    .proj_p{
+        text-align:center;
+        margin:1rem 0;
+        font-size:1.5rem;
+    }
+    .projects h2{
+        font-size: 1.2rem;
+    }
+    .beigebox{
+        height:34rem;
+        width:160rem;
+    }
+    .sec_five p{
+        font-size:1.3rem;
+    }
+    .sec_five h1{
+        font-size: 3.5rem;
+    }
+    .schools h1{
+        font-size:1.2rem;
+    }
+    .schools h3{
+        font-size:1rem;
+    }
+    .imageWrapper{
+        height:21rem;
+        width:16rem;
+    }
+    .image2{
+        height:16rem;
+        width:16rem;
+    }
+    .color_box{
+        height:16rem;
+        width:16rem;
+    }
+    .skillbox{
+        padding:2rem;
+    }
+}
+@media  only screen and (1267px<=width<=1347px){
+   
+    .greetText{
+        font-size: 6.5rem;
+    }
+    .projectBox{
+        height:17.5rem;
+        width:17.5rem;
+    }
+    .schools{
+        height: 14rem;
+        width: 14rem;
+        
+    }
+    .imageWrapper{
+        height:19rem;
+        width:14rem;
+    }
+    .image2{
+        height:15rem;
+        width:15rem;
+    }
+    .color_box{
+        height:15rem;
+        width:15rem;
+    }
+}
+@media  only screen and (width<=1267px){
+    .skillbox{
+        width:21%;
+    }
+    .imageWrapper{
+        height:18rem;
+        width:13rem;
+    }
+    .image2{
+        height:14rem;
+        width:14rem;
+    }
+    .color_box{
+        height:14rem;
+        width:14rem;
+    }
+    .about h1{
+        font-size: 3rem;
+    }
+    .sec_three h1{
+        font-size: 3rem;
+    }
+    .sec_four h1{
+        font-size: 3rem;
+    }
+    .sec_five h1{
+        font-size: 3rem;
+    }
+    .schools h1{
+        font-size:1.2rem;
+    }
+    .projectBox{
+        height:15.5rem;
+        width:15.5rem;
+    }
+}
+@media  only screen and (width<=1199px){
+    .skillWrapper h2{
+        font-size: 1.4rem;
+        margin:0.6rem;
+    }
+    .skillWrapper h3{
+        font-size: 1.1rem;
+        
+    }
+    .skillWrapper li{
+        font-size:0.8rem;
+    }
+}
+@media  only screen and (width<=1031px){
+    .aboutWrapper{
+        position: absolute;
+        top:3rem;
+        left:5rem;
+        
+    }
+    .greetText{
+        font-size: 6rem;
+    }
+    .name_in_navbar{
+        font-size:1rem ;
+    }
+    .navbar a{
+        font-size: 1rem;
+    }
+    .nav_element{
+        margin: 0 1.4rem;
+    }
+    .skillbox{
+        width:22%;
+    }
+}
+@media  only screen and (width<=979px){
+    .beigebox2{
+        height:35rem;
+        width:220rem;
+    }
+    .imageWrapper{
+        height:16rem;
+        width:11rem;
+    }
+    .image2{
+        height:13rem;
+        width:13rem;
+    }
+    .color_box{
+        height:13rem;
+        width:13rem;
+    }
+    .schools{
+        height: 13rem;
+        width: 13rem;
+        
+    }
+    .schools h1{
+        font-size:1rem;
+    }
+    .schools h3{
+        font-size:0.8rem;
+    }
+    .skillbox{
+        width:23%;
+    }
+    .Education{
+        margin-bottom: 1rem;
+    }
 }
