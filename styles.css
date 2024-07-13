@@ -737,7 +737,7 @@ footer h2{
         display: block;
     }
 }
-@media only screen and (width<=400px){
+@media only screen and (width<=410px){
     .sidebar{
         width:80%;
     }
