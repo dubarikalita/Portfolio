@@ -121,7 +121,6 @@ nav li:first-child{
     background-color: black;
     position: relative;
     height:75vh;
-    /* overflow-x: hidden; */
 }
 
 .color_box{
@@ -826,7 +825,7 @@ footer h2{
 }  
 @media only screen and (width<=370px){
     .about{
-        width:98%;
+        width:85%;
     }
     .schools{
         height: 13rem;
@@ -856,6 +855,7 @@ footer h2{
         width:9rem;
     }
     .sec_three p{
-        margin:0 2rem;
+       width:80%;
+       margin:1rem 2rem;
     }
 }
