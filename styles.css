@@ -13,7 +13,7 @@ body::-webkit-scrollbar{
 }
 
 body{
-    
+    min-height: 100vh;
     /* background-color: rgba(214, 214, 209, 0.951); */
     background-color: black;
     /* background-color: rgb(207, 204, 197); */
@@ -31,77 +31,67 @@ body{
     right:0;
     transform: rotate(14deg);
 }
-.navbar{
-    /* background-color: black; */
-    position: relative;
-    padding:2%;
-    /* z-index: 1; */
+
+/* nav{
+   
+} */
+nav ul{
+    width:100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-.name_in_navbar{
-    color: white;
-    position: absolute;
-    left:2rem;
-    bottom:1rem;
+nav li{
+    height:50px;
+    z-index: 1;
+}
+nav a{
+    color:white;
+    height:100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-.elements{
-    position: absolute;
-    right:2rem;
-    bottom:1rem;
-    display:flex;
-}
-.nav_element{
-    margin: 0 2rem;
-}
-
-.navbar a{
-    text-decoration: none;
-    color:white;
-    font-size: 120%;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    /* display:block;
-    position: relative;
-    padding: 0.2em 0; */
-}
-/* .navbar a::after{
-    content:'';
-    position: absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:0.1em;
-    background-color: white;
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
+    font-size: 1.2rem;
     
 }
-/* .navbar a::after,
-.navbar a:focus::after{
-    opacity:0;
-    transform:translate3d(0,0.2em,0);
-} */
-/* .navbar a::after{
-    opacity:1;
-    transform: scale(0);
-    transform-origin: center;
+nav li:first-child{
+    margin-right: auto;
 }
-.navbar a::after,
-.navbar a:focus::after{
-    transform: scale(1);
-} */ 
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width:250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.sidebar li{
+    width:100%;
+}
+.sidebar a{
+    width:100%;
+}
+.menuButton{
+    display: none;
+}
 .wrapper{
-    height: 91vh;
+    height: 94vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
-    
 }
 .imageWrapper{
     height:25rem;
@@ -143,11 +133,9 @@ body{
 .aboutWrapper{
     color:white;
     display:flex;
-    flex-wrap: wrap;
     position: absolute;
     top:5rem;
     left:5rem;
-    
 }
 .image2{
     height:20rem;
@@ -207,8 +195,6 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 4rem;
-    
-    
 }
 .skillWrapper h2{
     text-align: center;
@@ -559,15 +545,6 @@ footer h2{
     .greetText{
         font-size: 6rem;
     }
-    .name_in_navbar{
-        font-size:1rem ;
-    }
-    .navbar a{
-        font-size: 1rem;
-    }
-    .nav_element{
-        margin: 0 1.4rem;
-    }
     .skillbox{
         width:22%;
     }
@@ -605,5 +582,273 @@ footer h2{
     }
     .Education{
         margin-bottom: 1rem;
+    }
+}
+@media  only screen and (width<=941px){
+    .skillbox{
+        width:25%;
+        margin:1.5rem 0;
+    }
+    .skillWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .beigebox2{
+        height:30rem;
+        width:200rem;
+    }
+}
+@media  only screen and (width<=885px){
+    .skillbox{
+        width:30%;
+        
+    }
+    .aboutWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .color_box{
+        position: absolute;
+        left:17.9rem;
+        top:0.5rem;
+    }
+    .image2{
+        height:13rem;
+        width:13rem;
+        margin-bottom: 2rem;
+    }
+    .about {
+        font-size: 0.8rem;
+        width:60%;
+        
+    }
+    .sec_two{
+        margin-top: 2rem;
+        height: 78vh;
+    }
+    .beigebox2{
+        height:38rem;
+        width:155rem;
+        right:15rem;
+        transform: rotate(48deg);
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+    .imageWrapper{
+        height:18rem;
+        width:14.5rem;
+        margin-top: 2rem;
+    }
+    
+}
+@media  only screen and (width<=867px){
+    .about {
+        width:64%;
+    }
+}
+@media  only screen and (width<=820px){
+    .imageWrapper{
+        height:18rem;
+        width:14.5rem;
+        margin-top: 2rem;
+    }
+    .about {
+        width:67%;
+        position: relative;
+        right:2rem;
+    }
+    .color_box{
+        position: absolute;
+        left:16.9rem;
+        height: 12rem;
+        width: 12rem;
+    }
+    .image2{
+       height: 12rem;
+       width: 12rem;
+    }
+    .imageWrapper{
+        height:17rem;
+        width:13.5rem;
+        margin-top: 2rem;
+    }
+}
+@media  only screen and (width<=720px){
+    .color_box{
+        position: absolute;
+        left:14.9rem;
+    }
+    .beigebox2{
+        height:38rem;
+        width:146rem;
+    }
+    .skillbox{
+        width:32%;
+        
+    }
+}
+@media  only screen and (width<=669px){
+    .about{
+        width:70%;
+    }
+    .color_box{
+        position: absolute;
+        left:13.9rem;
+    }
+}
+@media  only screen and (width<=560px){
+    .about{
+        width:70%;
+        font-size: 0.7rem;
+    }
+    .color_box{
+        position: absolute;
+        left:10.9rem;
+    }
+    .skillbox{
+        width:40%;
+        
+    }
+    .sec_three p{
+        font-size: 1.2rem;
+    }
+    .beigebox2{
+        height:38rem;
+        width:140rem;
+        right:12rem;
+    }
+}
+@media only screen and (width<=800px) {
+    .hide{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+}
+@media only screen and (width<=400px){
+    .sidebar{
+        width:80%;
+    }
+    .greetText{
+        font-size: 5rem;
+        margin: 0 4rem;
+    }
+    .beigebox2{
+        height:40rem;
+        width:96rem;
+        right:3rem;
+        transform: rotate(48deg);
+    }
+    .imageWrapper{
+        height:15rem;
+        width:11.5rem;
+    }
+    .about h1{
+        font-size: 3rem;
+    }
+    .color_box{
+        position: absolute;
+        left:5.9rem;
+        height:11rem;
+        width:11rem;
+    }
+    .image2{
+        height:11rem;
+        width:11rem;
+    }
+    .about{
+        width: 80%;
+    }
+    .skillbox{
+        width: 63%;
+    }
+    .sec_three p{
+        font-size:1.1rem;
+    }
+    .sec_three h1{
+        font-size: 3rem;
+    }
+
+    .skillWrapper h2{
+        font-size: 1.3rem;
+    }
+    .skillWrapper h3{
+        font-size: 1.2rem;
+        
+    }
+    .skillWrapper li{
+        font-size:0.8rem;
+    }
+    .sec_four h1{
+        font-size: 3rem;
+    }
+    .proj_p{
+        font-size:1.2rem;
+    }
+    .projects h2{
+        font-size: 1rem;
+    }
+    .projects p{
+        font-size: 0.8rem;
+    }
+    .sec_five p{
+        font-size:1.2rem;
+    }
+    .sec_five h1{
+        font-size: 3rem;
+    }
+    .schools h1{
+        font-size:1rem;
+    }
+    .schools h3{
+        font-size:0.8rem;
+    }
+    footer h2{
+        font-size: 1.2rem;
+    }
+    .icon{
+        font-size: 1rem;
+        margin: 2.5rem 1rem;
+    }
+}  
+@media only screen and (width<=370px){
+    .about{
+        width:98%;
+    }
+    .schools{
+        height: 13rem;
+        width: 13rem;
+        margin: 2rem 3.5rem;
+    }
+    .aboutWrapper{
+        position: absolute;
+        left:3.5rem;
+    }
+    .sec_two{
+        height: 70vh;
+    }
+    .imageWrapper{
+        height:13rem;
+        width:9.5rem;
+    }
+    .color_box{
+        position: absolute;
+        left:5.9rem;
+        height:9rem;
+        width:9rem;
+    }
+    .image2{
+        height:9rem;
+        width:9rem;
     }
 }
