@@ -121,7 +121,7 @@ nav li:first-child{
     background-color: black;
     position: relative;
     height:75vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .color_box{
@@ -839,6 +839,7 @@ footer h2{
     }
     .sec_two{
         height: 70vh;
+        
     }
     .imageWrapper{
         height:13rem;
@@ -853,5 +854,8 @@ footer h2{
     .image2{
         height:9rem;
         width:9rem;
+    }
+    .sec_three p{
+        margin:0 2rem;
     }
 }
